@@ -11,3 +11,4 @@ tmp.yaml
 *.cer
 *.jks
 *.json
+*.sqlite

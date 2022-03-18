@@ -32,6 +32,8 @@ We get the following data from the order book ticker stream, where we see that t
   "a": "41.0", // best ask price
   "A": "10" // best ask qty
 }
+{"u":7575908,"s":"BTCUSDT","b":"38917.41000000","B":"0.00770700","a":"38917.42000000","A":"0.07426000"}
+{"u":7683972,"s":"BTCUSDT","b":"38821.55000000","B":"0.06620100","a":"38821.56000000","A":"0.00232600"}
 ```
 
 After a couple of minutes the price moves into our zone, and we get the following update where we see that we can sell 5 BNB at a price of 42 USDT.
@@ -60,6 +62,7 @@ After a couple of minutes we see that more people are willing to sell above 42 U
   "a": "43.0", // best ask price
   "A": "10" // best ask qty
 }
+{"e":"trade","E":1647166841971,"s":"BTCUSDT","t":1711844,"p":"38900.24000000","q":"0.00476600","b":5013255,"a":5013112,"T":1647166841971,"m":false,"M":true}
 ```
 
 So we persist another entry into the db, reporting that we can execute the remaining 20 BNB at a price of 42.5 USDT.

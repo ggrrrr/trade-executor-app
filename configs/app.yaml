@@ -1,0 +1,4 @@
+binance:
+  ws:
+    url: wss://testnet.binance.vision/ws
+    url1: wss://testnet.binance.vision/ws/btcusdt@bookTicker
