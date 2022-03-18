@@ -4,6 +4,13 @@
 - https://academy.binance.com/en/articles/binance-api-series-pt-1-spot-trading-with-postman
 - https://binance-docs.github.io/apidocs/spot/en/#websocket-market-streams
 
+Run
+
+```
+source env-local.sh
+go run main.go
+```
+
 .env.local
 
 ```
@@ -21,7 +28,7 @@ BINANCE_WS_URL=wss://testnet.binance.vision/ws
 
 - how did you approach the task
 
-  - First I did I research for binance service. ( took me quite a bit of time)
+  - First I did a research for binance service. ( took me quite a bit of time)
   - Created some basic WS client to see how it is working
   - Modeling the data structs
   - basic structure of the code
@@ -32,16 +39,20 @@ BINANCE_WS_URL=wss://testnet.binance.vision/ws
 
 - what part did you like the most
 
-- I have never used WS in such way ( the service to act as a client ), ussually I have been using kafka
+  - I have never used WS in such way ( the service to act as a client ), ussually I have been using kafka
 
 - how much time you spent on it in total
 
-  - over all total spend: time 8-10 hours
+  - over all total spent with reading and coding: 9-11 hours
 
 - describe the next steps that you would work on when you had more time
+
+  - error handling
 
   - more flexible orders ( price min/max , timeout for one order)
 
   - handling the actual order execution
+
+  - research if there are other better way of handling the wsconn.ReadMessage
 
   - depends on the use case, run these as a AWS Lambda or GCP Functinos, or create a scalable api service
